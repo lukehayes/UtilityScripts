@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import urllib3
 import requests
+import os
 
 # response = requests.get("http://imgsrc.ru/wizarden/68739106.html?pwd=&per_page=12")
 
