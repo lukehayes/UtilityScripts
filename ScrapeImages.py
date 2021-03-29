@@ -41,10 +41,6 @@ def FindImages(url):
     soup = GetPageData(url)
     print("Images")
 
-    for content in soup.find_all('img', {'data-src': True}):
-        images.append(img.get('data-src').lstrip("//"))
-        print(img)
-
     for img in soup.find_all('img', {'data-src': True}):
         images.append(img.get('data-src').lstrip("//"))
         print(img)
