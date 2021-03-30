@@ -49,7 +49,9 @@ def PrepareImageURLS():
 
     for url in images:
         match = re.search(pattern, url)
-        filenames.append(match.group(0))
+
+        if match:
+            filenames.append(match.group(0))
 
 def WriteImages():
     for i in range(0, len(images)):
@@ -83,13 +85,10 @@ def IteratePages(url, n):
         # print("Finished Round " + str(x))
         # ClearLists()
 
-
-print(url)
-print(count)
 IteratePages(url, int(count))
 
-# WriteImages()
-# MoveImages()
+WriteImages()
+MoveImages()
 # ClearLists()
 
 
