@@ -1,9 +1,8 @@
+#!/usr/bin/env python3
+
 # -------------------------------------------------------------
 # A simple image scraping script for bulk downloading of images.
 # -------------------------------------------------------------
-
-#!/usr/bin/env python3
-
 from bs4 import BeautifulSoup
 import urllib3
 import requests
@@ -34,7 +33,7 @@ def MoveImages():
 def GetPageData(url):
     """ Send Request and Init Beautiful Soup """
     r = http.request("GET", str(url))
-    soup = BeautifulSoup(r.data, 'html.parser')
+    soup = BeautifulSoup(r.data, 'html.parser',  from_encoding="iso-8859-1")
     return soup
 
 def FindImages(url):
@@ -84,10 +83,13 @@ def IteratePages(url, n):
         # print("Finished Round " + str(x))
         # ClearLists()
 
+
+print(url)
+print(count)
 IteratePages(url, int(count))
 
-WriteImages()
-MoveImages()
+# WriteImages()
+# MoveImages()
 # ClearLists()
 
 
