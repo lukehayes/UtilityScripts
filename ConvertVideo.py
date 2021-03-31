@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 # -------------------------------------------------------------
 # This script uses the FFMpeg library to bulk convert .MOV
 # files into .MP4 versions.
