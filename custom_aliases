@@ -18,6 +18,19 @@ alias cpis="composer install"
 alias cpda="composer dumpautoload"
 alias pp="php -S localhost:8000"
 
+# Laravel
+#
+alias pa="php artisan"
+alias pas="php artisan serve"
+alias pam="php artisan migrate"
+
+# Symfony
+#
+alias pbc="php bin/console"
+alias sc="symfony console"
+alias ss="symfony serve"
+alias sd="symfony console doctrine"
+
 # Cake
 #
 alias cake="./bin/cake"
