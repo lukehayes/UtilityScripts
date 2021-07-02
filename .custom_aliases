@@ -9,7 +9,7 @@ alias dv="cd $HOME/Dev"
 alias m="make"
 alias mc="make clean"
 alias a="./bin/app"
-alias m="m && a"
+alias mm="m && a"
 
 # PHP/Composer
 #
