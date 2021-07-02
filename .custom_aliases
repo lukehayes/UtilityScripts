@@ -1,16 +1,26 @@
 # General movement, directories etc.
+#
 alias asd="cd $HOME"
 alias d="cd $HOME/Desktop"
 alias dv="cd $HOME/Dev"
 
 # C/C++
+#
 alias m="make"
 alias mc="make clean"
 alias a="./bin/app"
 alias m="m && a"
 
 # PHP/Composer
+#
 alias cpin="composer init"
 alias cpis="composer install"
 alias cpda="composer dumpautoload"
 alias pp="php -S localhost:8000"
+
+# Cake
+#
+alias cake="./bin/cake"
+alias cs="cake server"
+alias cm="cake migrations"
+alias crm="cake migrations rollback"
