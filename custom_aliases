@@ -1,3 +1,5 @@
+
+
 # General movement, directories etc.
 #
 alias asd="cd $HOME"
@@ -18,22 +20,18 @@ alias cpis="composer install"
 alias cpda="composer dumpautoload"
 alias pp="php -S localhost:8000"
 
-# Laravel
+# CodeIgniter
 #
-alias pa="php artisan"
-alias pas="php artisan serve"
-alias pam="php artisan migrate"
-
-# Symfony
-#
-alias pbc="php bin/console"
-alias sc="symfony console"
-alias ss="symfony serve"
-alias sd="symfony console doctrine"
+alias p="php spark"
+alias ps="php spark serve"
+alias psmr="php spark migrate:refresh"
 
 # Cake
 #
 alias cake="./bin/cake"
 alias cs="cake server"
 alias cm="cake migrations"
-alias crm="cake migrations rollback"
+alias cmm="cake migrations migrate"
+alias cms="cake migrations seed"
+alias cmr="cake migrations rollback"
+
